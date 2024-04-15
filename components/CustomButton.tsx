@@ -1,19 +1,20 @@
-'use client';
+"use client";
 
-import { customButtonProps } from '@/types';
-import React from 'react'
+import { customButtonProps } from "@/types";
+import Image from "next/image";
 
-export const CustomButton = ({title,containerStyle,handleClick}:customButtonProps) => {
-  return (
-    <button
-     disabled={false}
-       type={"button"}
-       className={`custom-btn ${containerStyle}`}
-       onClick={handleClick}
 
-    >
-        <span className={`flex-1`}>{title}</span>
+const Button = ({  btnType, containerStyle,  title,  handleClick }: customButtonProps) => (
+  <button
+    disabled={false}
+    type={btnType || "button"}
+    className={`custom-btn ${containerStyle}`}
+    onClick={handleClick}
+  >
+    <span className={`flex-1 `}>{title}</span>
+   
+     
+  </button>
+);
 
-    </button>
-  )
-}
+export default Button;
