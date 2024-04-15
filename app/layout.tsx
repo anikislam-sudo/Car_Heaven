@@ -5,7 +5,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Car Hub",
+  title: "Car Heaven",
   description: "Discover world's best car showcase application",
 };
 
