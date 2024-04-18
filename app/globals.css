@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-
+ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -59,7 +59,8 @@
 }
 
 .hero__image-overlay {
-  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  @apply absolute xl:-top-24 xl:-right-3/4 -right-1/4 bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  background-image: url('/vector-bg.png'); /* Replace 'path/to/vector-background.png' with the actual path to your vector background image */
 }
 /* END: Hero styles */
 
@@ -116,7 +117,7 @@
 }
 
 .car-card__icon-container {
-  @apply flex group-hover:invisible w-full justify-between text-grey;
+  @apply flex  w-full justify-between text-grey;
 }
 
 .car-card__icon {
@@ -128,7 +129,8 @@
 }
 
 .car-card__btn-container {
-  @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
+  @apply flex absolute bottom-0 left-0 right-0 justify-center;
+  z-index: 10; /* Adjust z-index as needed */
 }
 /* END: Car Card styles */
 
