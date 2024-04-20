@@ -1,6 +1,6 @@
 "use client";
 import { carProps } from "@/types";
-import { calculateCarRent } from "@/utills";
+import { calculateCarRent, generateCarImageUrl } from "@/utills";
 import React, { useState } from "react";
 import {   CarDetails, CustomButton } from ".";
 import Image from "next/image";
@@ -34,7 +34,7 @@ export const CarCard = ({ car }: CarCardProps) => {
       </p>
       <div className="car-card__image relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero1.png"
+          src={generateCarImageUrl(car,"01")} 
           alt="car model"
           fill
           priority
@@ -65,7 +65,7 @@ export const CarCard = ({ car }: CarCardProps) => {
       <div className="car-card__btn-container absolute bottom-0 left-0 right-0 flex justify-center">
         <CustomButton
           title="View More"
-          containerStyle="w-full py-[16px] rounded bg-primary-blue"
+          containerStyle="w-full py-[16px] rounded bg-orange-500"
           textStyles="text-white text-[14px] leading-[17px] font-bold"
           rightIcon="/right-arrow.svg"
           handleClick={() => setIsOpen(true)}

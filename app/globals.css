@@ -144,7 +144,13 @@
 }
 
 .car-details__main-image {
-  @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
+  @apply relative w-full h-40  bg-cover bg-center rounded-lg;
+  
+
+
+}
+.bg-patternn{
+  background-image: url('/patternn.png');
 }
 /* END: Car Details styles */
 
