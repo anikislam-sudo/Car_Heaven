@@ -48,7 +48,7 @@ export const SearchBar = () => {
  
     }
   return (
-   <form className='searchbar  fixed top-0 left-0 z-50 bg-white w-full p-4 shadow-md' onSubmit={handleSearch}>
+   <form className='searchbar   top-0 left-0 z-50 bg-white w-full p-4 shadow-md' onSubmit={handleSearch}>
     <div className='searchbar__item'>
       <SearchManufacture
        manufacturer={manufacturer}
@@ -69,8 +69,8 @@ export const SearchBar = () => {
           name='model'
           value={model}
           onChange={(e) => setModel(e.target.value)}
-          placeholder='Tiguan...'
-          className='searchbar__input'
+          placeholder='Model '
+          className='searchbar__input '
         />
         <SearchButton otherClasses='sm:hidden' />
       </div>

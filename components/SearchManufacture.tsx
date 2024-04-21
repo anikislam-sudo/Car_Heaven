@@ -29,8 +29,8 @@ const SearchManufacture = ({ manufacturer, setManuFacturer }: SearchManuFacturer
             <Image
               src='/carSearch-logo-removebg-preview.png'
               width={40}
-              height={25}
-              className='ml-4'
+              height={30}
+              className='ml-4 '
               alt='car logo'
             />
           </Combobox.Button>
@@ -40,7 +40,7 @@ const SearchManufacture = ({ manufacturer, setManuFacturer }: SearchManuFacturer
             className='search-manufacturer__input'
             displayValue={(item: string) => item}
             onChange={(event) => setQuery(event.target.value)} // Update the search query when the input changes
-            placeholder='Search...'
+            placeholder='Select A Brand...'
           />
 
           {/* Transition for displaying the options */}
