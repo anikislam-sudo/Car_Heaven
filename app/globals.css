@@ -60,7 +60,7 @@
 
 .hero__image-overlay {
   @apply absolute xl:-top-24 xl:-right-3/4 -right-1/4 bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
-  background-image: url('/vector-bg.png'); /* Replace 'path/to/vector-background.png' with the actual path to your vector background image */
+  background-image: url('/vectoe_shape.png'); /* Replace 'path/to/vector-background.png' with the actual path to your vector background image */
 }
 /* END: Hero styles */
 
